@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails',        '5.1.6'
+gem 'rails',         '~> 5.2.8', '>= 5.2.8.1'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
@@ -19,9 +19,12 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  #  rails generate scaffold User name:string email:stringを追加すると下記のエラーが生じされたため以下のgemを追加
+  gem 'bootsnap', '>= 1.4.2', require: false
 end
 
-# group
+
+# groupは、--without productionオプションを付けてbundle installするときに、このグループに含まれるgemをインストールしないようにするためのものです。
 group :production do
   gem 'pg', '0.20.0'
 end
