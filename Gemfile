@@ -27,7 +27,7 @@ group :development do
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
   #  rails generate scaffold User name:string email:stringを追加すると下記のエラーが生じされたため以下のgemを追加
-  gem 'bootsnap', '>= 1.4.2', require: false
+  gem 'bootsnap', '>= 1.4.2'
 end
 
 
