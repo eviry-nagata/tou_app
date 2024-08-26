@@ -48,8 +48,6 @@ GEM
     base64 (0.2.0)
     bcrypt_pbkdf (1.1.1)
     bindex (0.8.1)
-    bootsnap (1.13.0)
-      msgpack (~> 1.2)
     builder (3.3.0)
     byebug (9.0.6)
     capistrano (3.19.1)
@@ -108,7 +106,6 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
-    msgpack (1.7.2)
     multi_json (1.15.0)
     net-imap (0.2.2)
       digest
@@ -229,7 +226,6 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt_pbkdf
-  bootsnap (>= 1.4.2)
   byebug (= 9.0.6)
   capistrano
   capistrano-bundler
