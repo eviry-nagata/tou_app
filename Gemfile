@@ -13,7 +13,7 @@ gem 'bcrypt_pbkdf'
 
 
 group :development, :test do
-  # gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3', '~> 1.4'
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'capistrano'
   gem 'capistrano-bundler'
