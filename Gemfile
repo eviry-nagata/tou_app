@@ -32,9 +32,9 @@ end
 
 
 # groupは、--without productionオプションを付けてbundle installするときに、このグループに含まれるgemをインストールしないようにするためのものです。
-group :production do
-  gem 'pg', '0.20.0'
-end
+# group :production do
+#   gem 'pg', '0.20.0'
+# end
 
 group :production, :staging do
   gem 'unicorn'
