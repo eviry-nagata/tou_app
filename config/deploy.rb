@@ -132,9 +132,10 @@ set :rbenv_type, :system # または :user
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 # set :rbenv_roles, :all # default value
 
-set :deploy_migration, false
+
 
 namespace :deploy do
+  Rake::Task["deploy:migrate"].clear_actions
   desc 'Restart application'
   task :restart do
     invoke 'unicorn:restart'
