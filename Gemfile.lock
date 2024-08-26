@@ -105,7 +105,6 @@ GEM
     marcel (1.0.4)
     method_source (1.1.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.7)
     minitest (5.15.0)
     multi_json (1.15.0)
     net-imap (0.2.2)
@@ -191,8 +190,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.9)
-      mini_portile2 (~> 2.8.0)
     sshkit (1.23.0)
       base64
       net-scp (>= 1.1.2)
@@ -243,7 +240,6 @@ DEPENDENCIES
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
-  sqlite3 (~> 1.4)
   turbolinks (= 5.0.1)
   uglifier (= 3.2.0)
   unicorn
