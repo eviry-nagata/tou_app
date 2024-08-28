@@ -211,7 +211,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    unicorn (6.1.0)
+    unicorn (5.4.1)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     web-console (3.5.1)
@@ -248,7 +248,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   turbolinks (= 5.0.1)
   uglifier (= 3.2.0)
-  unicorn
+  unicorn (~> 5.4.1)
   web-console (= 3.5.1)
 
 BUNDLED WITH
