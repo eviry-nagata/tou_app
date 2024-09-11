@@ -92,6 +92,7 @@
 #   end
 # end
 
+# deploy.rbはcapistranoの設定ファイルです。このファイルにはデプロイ時に行われるタスクを設定します。
 # capistranoのバージョン固定
 lock '~> 3.19.1'
 
