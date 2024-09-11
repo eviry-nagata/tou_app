@@ -1,18 +1,18 @@
 # unicornのpidファイル、設定ファイルのディレクトリを指定
 namespace :unicorn do
     task :environment do
-      set :unicorn_pid,    "/projects/toy_app/current/tmp/pids/unicorn.pid"
-      set :unicorn_config, "/projects/toy_app/current/config/unicorn/production.rb"
-      # set :unicorn_pid,    "#{current_path}/tmp/pids/unicorn.pid"
-      # set :unicorn_config, "#{current_path}/config/unicorn/production.rb"
+      # set :unicorn_pid,    "/projects/toy_app/current/tmp/pids/unicorn.pid"
+      # set :unicorn_config, "/projects/toy_app/current/config/unicorn/production.rb"
+      set :unicorn_pid,    "#{current_path}/tmp/pids/unicorn.pid"
+      set :unicorn_config, "#{current_path}/config/unicorn/production.rb"
     end
   
     # unicornをスタートさせるメソッド
     def start_unicorn
       within current_path do
         # Capistranoがリモートサーバー上でUnicornを起動するためのコマンド
-        # execute :bundle, :exec, :unicorn, "-c #{fetch(:unicorn_config)} -E #{fetch(:rails_env)} -D"
-        execute :bundle, :exec, :unicorn, "-c /projects/toy_app/current/config/unicorn/production.rb -E #{fetch(:rails_env)} -D"
+        execute :bundle, :exec, :unicorn, "-c #{fetch(:unicorn_config)} -E #{fetch(:rails_env)} -D"
+        # execute :bundle, :exec, :unicorn, "-c /projects/toy_app/current/config/unicorn/production.rb -E #{fetch(:rails_env)} -D"
       end
     end
   
