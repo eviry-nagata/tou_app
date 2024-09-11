@@ -113,11 +113,14 @@ set :linked_files, %w[config/master.key]
 
 # シンボリックリンクをはるファイル。
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/settings.yml', '.env')
-set :linked_files, fetch(:linked_files, []).push('config/settings.yml')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/settings.yml')
+
+# set :linked_files, fetch(:linked_files, []).push('config/settings.yml')
 
 
 # シンボリックリンクをはるフォルダ。
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+# set :linked_dirs, fetch(:linked_dirs, []).push('log')
 
 # 保持するバージョンの個数。過去５つまで履歴を保存。
 set :keep_releases, 5

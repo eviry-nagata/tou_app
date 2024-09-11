@@ -6,12 +6,17 @@ working_directory "/projects/toy_app/current"
 # Unicorn PID file location
 pid "/projects/toy_app/current/tmp/pids/unicorn.pid"
 
-# Path to logs
-stderr_path "/projects/toy_app/current/log/unicorn.stderr.log"
-stdout_path "/projects/toy_app/current/log/unicorn.stdout.log"
+# # 追加
+# listen "/var/run/unicorn.sock"
+# pid "/var/run/unicorn.pid"
 
-# Unicorn socket
-listen "/projects/toy_app/current/tmp/sockets/unicorn.sock"
+# Path to logs
+# この設定は、unicornのログをどこに出力するかを指定しています。
+stderr_path "/projects/toy_app/shared/log/unicorn.stderr.log"
+stdout_path "/projects/toy_app/shared/log/unicorn.stdout.log"
+
+# # Unicorn socket
+# listen "/projects/toy_app/current/tmp/sockets/unicorn.sock"
 
 # Number of processes
 worker_processes 2
