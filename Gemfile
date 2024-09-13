@@ -10,10 +10,9 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
-
+gem 'sqlite3', '~> 1.4'
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.4'
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'capistrano'
   gem 'capistrano-bundler'
